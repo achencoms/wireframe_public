@@ -1,0 +1,173 @@
+:root {
+  /* 
+      FIRST WE'LL DEFINE OUR SWATCHES, i.e. THE COMPLEMENTARY
+      COLORS THAT WE'LL USE TOGETHER IN MULTIPLE PLACES THAT
+      TOGETHER WILL MAKE UP A GIVEN THEME
+  */
+  --control-id: 0;
+  --swatch-foundation:    #EEEEDD; /* USED FOR BODY BACKGROUND */
+  --swatch-primary:       #E6E6E6; /* DOMINANT COLOR, USED FOR MOST BACKGROUNDS */
+  --swatch-complement:    #E1E4CB; /* USED IN FORGROUND OF PRIMARY FOR TEXT AND BORDERS */
+  --swatch_contrast:      #111111; /* USED IN MOUSE-OVER SELECTION OF LARGE ELEMENTS */
+  --swatch-accent:        #669966; /* USED IN MOUSE-OVER SELECTION OF TEXT AND BORDERS */    
+  --my-font-family:          "Robaaaoto";
+  --bounceEasing: cubic-bezier(0.51, 0.92, 0.24, 1.15);
+}
+
+body {
+  background-color: #473850;
+  font-family: 'Lexend Exa';
+}
+
+div.banner {
+  background-image: linear-gradient(to bottom,         
+  #FF5252, #7F5A95);
+  color: white;
+  font-size: 48pt;
+  border-color: black;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 10px;
+  padding-left: 10%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+.home_new_list_button {
+  font-size: 32pt;
+}
+.home_new_list_button:hover {
+  box-shadow: 1px 2px;
+}
+
+.list_section_header {
+  position: relative !important;
+  margin-bottom: -10px !important;
+}
+
+.list_sort_header {
+  display: inline-block;
+}
+
+.list_sort_header:hover {
+  color: white;
+  cursor: pointer;
+}
+
+.rounded {
+  border-radius: 10px;
+}
+
+.padding_20 {
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.padding_12 {
+  padding-right: 12px;
+  padding-left: 12px;
+}
+
+.margin_bottom_-10 {
+  margin-bottom: -10px !important;
+}
+
+.item_card:hover {
+  background-color: #7F5A95;
+  color: white !important;
+  border-radius: 10px; 
+  cursor: pointer;
+}
+
+.text_20 {
+  font-size: 20px !important;
+}
+
+.text_16 {
+  font-size: 16px !important;
+}
+
+.material-tooltip {
+  transform: translateY(-30px) translateX(-165px) !important;
+}
+
+.container-example {
+  background-color: white;
+  width: 120px;
+  height: 80px;
+  border: 1px solid black;
+}
+
+.container-control {
+  background-color: white;
+  width: 50px;
+  height: 50px;
+  border: 1px solid black;
+  position: absolute;
+}
+
+.drag-box {
+  height: 100%;
+  width: 100%;
+  border: 1px solid black;
+}
+
+.psuedo-button {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.psuedo-button-wrapper {
+  background-color: teal;
+}
+
+.selected-control div[style="position: absolute; user-select: none; width: 20px; height: 20px; right: -10px; top: -10px; cursor: ne-resize;"]{
+  width: 7px !important;
+  height: 7px !important; 
+  right: -5px !important;
+  top: -5px !important;
+  z-index: 400;
+  border: 1px solid black;
+  background-color: lightgray;
+}
+
+.selected-control div[style="position: absolute; user-select: none; width: 20px; height: 20px; right: -10px; bottom: -10px; cursor: se-resize;"] {
+  width: 7px !important;
+  height: 7px !important; 
+  right: -5px !important;
+  bottom: -5px !important;
+  z-index: 400;
+  border: 1px solid black;
+  background-color: lightgray;
+}
+
+.selected-control div[style="position: absolute; user-select: none; width: 20px; height: 20px; left: -10px; bottom: -10px; cursor: sw-resize;"] {
+  width: 7px !important;
+  height: 7px !important; 
+  left: -5px !important;
+  bottom: -5px !important;
+  z-index: 400;
+  border: 1px solid black;
+  background-color: lightgray;
+}
+
+.selected-control div[style="position: absolute; user-select: none; width: 20px; height: 20px; left: -10px; top: -10px; cursor: nw-resize;"] {
+  width: 7px !important;
+  height: 7px !important; 
+  left: -5px !important;
+  top: -5px !important;
+  z-index: 400;
+  border: 1px solid black;
+  background-color: lightgray;
+}
+
+input[type="color"] {
+  border-radius: 30px;
+}
+
+input::placeholder {
+  color: darkgray;
+}
+
+
